@@ -1,2 +1,8 @@
 # Design and Optimization of B747 Aircraft Autopilot
- 
+
+
+It is required to obtain the dimensional and non-dimensional stability derivatives for an aircraft of our choice under a certain flight condition. Then constructing the longitudinal and lateral state-space model for the aircraft linearized equations of motion alongside their different modes state-space model by analyzing them and calculating the modes approximation error. That is followed by the full system and the different modes transfer functions, eigenvalues, eigenvectors, and different modes characteristics (undamped natural frequency, damping ratio, settling time, etc.). Finally, the aircraft states response for step, impulse, initial disturbance, and elevator and throttle inputs.
+
+Secondly, a longitudinal autopilot is required for the aircraft, to control motion in the longitudinal plane. It is required to control velocity and altitude. To control attitude, we first need to control the pitch angle. This is done by choosing the gains for the PID controller. After this, we get to control altitude from the pitch angle through another PID controller. Height was calculated from theta. Finally, we need to control the velocity, to prevent stall of the airplane that could result from achieving the required pitch angle such that we achieve zero change in velocity. This is done also by choosing the gains for the PID controller.
+
+Finally, a lateral autopilot is to be designed for the aircraft, It is required to control the motion of the airplane in the lateral and directional planes, achieving the coordinated turn by controlling the ailerons and rudder, in which the turning maneuver by the ailerons and coordinating the turn by the rudder shall be tackled, we will choose a suitable controller gain for the system to achieve the best state response and performance, and finally, show the full lateral states response before and after using the designed controller.
